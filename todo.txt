@@ -1,0 +1,28 @@
+proper config.json validation using schema, rules
+
+logfile exists once and contains string
+jobs is an array of objects with at least one child
+		job child object must contains:
+				paths key - array of strings comtaining path characters
+				command key - string
+		job child object can contains:
+				ignores key - array of strings containing path characters
+				limit - number of zero or more
+
+
+
+
+
+
+
+
+
+
+
+
+after schema do file validation in one code block section:
+logfile exists
+each path exists and is either a file or dir
+
+
+
