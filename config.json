@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "paths": ["/etc/nginx/nginx.conf"],
+      "command": "service nginx restart"
+    },
+    {
+      "paths": ["/var/www/ghost/content/themes/casper"],
+      "ignores": [".syncthing"],
+      "command": "service ghost restart",
+      "limit": 60
+    }
+  ],
+  "logfile": "/var/log/inotify-autocommand.log"
+}
